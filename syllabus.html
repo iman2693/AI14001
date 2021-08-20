@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="هوش مصنوعی 1400">
+  <meta name="author" content="ایمان کیانیان">
+  <link rel="shortcut icon" href="AI.ico">
+  <title>هوش مصنوعی - ترم پاییز 1400</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="index.html" id="AINav">هوش مصنوعی</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul id="NavItems" class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html" id="HomeNav">خانه</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#refrences" id="RefrencesNav">منابع درس</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#classsyllabus" id="MainClassNav">رئوس مطالب کلاس درس</a>
+          </li>
+			<li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#practicesyllabus" id="TAClassNav">رئوس مطالب کلاس حل تمرین</a>
+          </li>
+		  <li class="nav-item" id="EnglishNav">
+			<button onclick="switchtoeng()" style="color:white; margin-right:10px;" class="nav-link js-scroll-trigger btn btn-primary">English</button>
+		  </li>
+		  <li class="nav-item" id="PersianNav" style="display:none;" >
+			<button onclick="switchtofa()" style="color:white; margin-left:10px;" class="nav-link js-scroll-trigger btn btn-primary">فارسی</button>
+		  </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white">
+    <div class="container text-center">
+		<img src="img/Guilan_logo.png" width="100px" height="100px" style="margin-bottom:20px" id="UniLogo" />
+      <h1 id="CourseTitle">هوش مصنوعی - ترم پاییز 1400</h1><br>
+		<h3 id="SyllabusHead">رئوس مطالب و فایل ها</h3>
+    </div>
+  </header>
+
+
+ 
+
+	<section id="refrences" >
+    <div class="container py-3">
+		<div class="row ">
+			<div class="col-12 mx-auto">
+				<h2 id="RefrencesHead">منابع درسی</h2><br>
+				<p class="lead" id="RefrenceDescription">كتاب زير به عنوان منبع اصلي اين درس مورد استفاده قرار خواهد گرفت: </p><br><br>
+				<div class="row justify-content-md-center">
+				  <div class="col-lg-3 col-md-6 mb-4">
+					<div class="card h-100">
+					  <img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/I/51bi4EnYE1L._SX384_BO1,204,203,200_.jpg" height="341px" alt="">
+					  <div class="card-body">
+						<p class="card-text" id="BookName" style="text-align:center;"> هوش مصنوعي: رهيافتي نوين</p>
+					  </div>
+					  <div class="card-footer">
+						<a href="http://aima.cs.berkeley.edu/" class="btn btn-primary" id="downloadBook">دانلود کتاب</a>
+					  </div>
+					</div>
+				  </div>	  
+				</div>
+			</div>
+		</div>
+		<!--/row-->
+	</div>
+	<!--container-->
+  </section>
+  <br>
+  <section id="classsyllabus" class="bg-light">
+    <div class="container py-3">
+		<div class="row">
+			<div class="col-12 mx-auto">
+			 <h2 id="MainClassHead">فایل ها و رئوس مطالب کلاس درس</h2><br>
+				<br>
+				<table class="table table-sm table-striped">
+				  <thead>
+					<tr>
+					  <th scope="col" id="LessonNumber">شماره جلسه</th>
+					   <th scope="col" id="DateNumber">تاریخ</th>
+					  <th scope="col" id="LessonTopic">موضوع درس</th>
+					  <th scope="col" id="DownloadContent">دانلود محتویات</th>
+					</tr>
+				  </thead>
+				  <!--
+				  <tbody>
+					<tr>
+					  <th scope="row">جلسه اول</th>
+					  <th>  -- </th>
+					  <td>مقدمه و معرفي </td>
+					  <td>
+						<a href="fonts/Fonts.rar">[فونت های مورد نیاز]</a><br>
+						<a href="Slides/AI_Lecture1(Introduction).pptx">[Slides.ppt]</a><br>
+						<a href="Slides/AI_Lecture1(Introduction).pdf" >[Slides.pdf]</a><br>
+						<a href="https://www.dropbox.com/s/vxdhwz8mxkn3nwl/Lecture1_Syllabus.mp4?dl=0" >[ويدئو: معرفي درس]</a><br>
+						<a href="https://www.dropbox.com/s/9eniqh5e5a4uqmb/Lecture1_AIDefinition.mp4?dl=0" >[ويدئو: تعريف هوش مصنوعي]</a><br>
+						<a href="https://www.dropbox.com/s/4kfeu8d8jpipmg5/Lecture1_AIHistory.mp4?dl=0" >[ويدئو: تاريخچه هوش مصنوعي]</a><br>
+						<a href="https://www.dropbox.com/s/kzq8mhkftlk1c7j/Lecture1_SOA.mp4?dl=0" >[ويدئو: جايگاه فعلي هوش مصنوعي]</a><br>
+						<a href="https://www.dropbox.com/s/ufuoouj1ymrnngy/Lecture1_Agents.mp4?dl=0" >[ويدئو: درك مفهوم عامل]</a><br>
+					</td>
+					</tr>
+
+					<tr>
+						<th scope="row">جلسه دوم</th>
+						<th> -- </th>
+						<td>جستجو-بخش اول </td>
+						<td>
+						  <a href="Slides/AI_Lecture2(Search-Part1)).pptx">[Slides.ppt]</a><br>
+						  <a href="Slides/AI_Lecture2(Search-Part1)).pdf" >[Slides.pdf]</a><br>
+						  <a href="https://www.dropbox.com/s/xio2m6j491fro18/AI-Lecture2%28Introduction%29.mp4?dl=0" >[ويدئو: مقدمه و معرفی عامل های برنامه ریز]</a><br>
+						  <a href="https://www.dropbox.com/s/jv2oy71m6182jdp/AI-Lecture2%28SearchProblem%29.mp4?dl=0" >[ويدئو: معرفی مسئله جستجو]</a><br>
+						  <a href="https://www.dropbox.com/s/quounq50a7fldit/AI-Lecture2%28SearchProblemExamples%29.mp4?dl=0" >[ويدئو: مثالهایی برای مسئله جستجو]</a><br>
+						  <a href="https://www.dropbox.com/s/md9w1r8thy540d6/AI-Lecture2%28SearchGraph-SearchTree%29.mp4?dl=0" >[ويدئو: گراف فضای حالت و درخت جستجو]</a><br>
+						  <a href="https://www.dropbox.com/s/226mh8205bhvhgb/AI-Lecture2%28SearchTreeImplementation%29.mp4?dl=0" >[ويدئو: پیاده سازی درخت جستجو]</a><br>
+						  <a href="https://www.dropbox.com/s/tsqu277ofkfkyz0/AI-Lecture2%28GeneralSearch%29.mp4?dl=0" >[ويدئو: الگوریتم کلی جستجو]</a><br>
+						  <a href="https://www.dropbox.com/s/bg6mjf3qv1fonuz/AI-Lecture2%28DepthFirst%29.mp4?dl=0" >[ويدئو: استراتژی جستجوی عمق اول]</a><br>
+						  <a href="https://www.dropbox.com/s/68rv3o3guakaqrh/AI-Lecture2%28DepthFirstProperties%29.mp4?dl=0" >[ويدئو: ارزیابی استراتژی جستجوی عمق اول]</a><br>
+					  </td>
+					  </tr>
+
+					  <tr>
+						<th scope="row">جلسه سوم</th>
+						<th> -- </th>
+						<td>جستجو-بخش دوم </td>
+						<td>
+						  <a href="Slides/AI_Lecture3(Search-Part2)).pptx">[Slides.ppt]</a><br>
+						  <a href="Slides/AI_Lecture3(Search-Part2)).pdf" >[Slides.pdf]</a><br>
+						  <a href="https://www.dropbox.com/s/9yz84hx6nbfkwmh/AI-Lecture3%28Summary%29.mp4?dl=0" >[ويدئو: خلاصه جلسه قبل و مقدمه]</a><br>
+						  <a href="https://www.dropbox.com/s/vhba6z5w1g2k8gr/AI-Lecture3%28BFS%29.mp4?dl=0" >[ويدئو: استراتژی جستجوی سطح اول]</a><br>
+						  <a href="https://www.dropbox.com/s/5bxiak47yc0bo3p/AI-Lecture3%28UCS%29.mp4?dl=0" >[ويدئو: استراتژی جستجوی هزینه یکنواخت]</a><br>
+						  <a href="https://www.dropbox.com/s/7atk3rsswdr6p6v/AI-Lecture3%28IDS%29.mp4?dl=0" >[ويدئو: استراتژی جستجوی عمیق سازی تکراری]</a><br>
+						  <a href="https://www.dropbox.com/s/14hpqx3dbnnq0yd/AI-Lecture3%28Heuristic%20Function%29.mp4?dl=0" >[ويدئو: جستجوی آگاهانه و تابع ابتکاری]</a><br>
+						  <a href="https://www.dropbox.com/s/fxdle0ki91d189f/AI-Lecture3%28Greedy%20Search%29.mp4?dl=0" >[ويدئو: استراتژی جستجوی حریصانه]</a><br>
+						 
+					  </td>
+					  </tr>
+
+					  <tr>
+						<th scope="row">جلسه چهارم</th>
+						<th>  -- </th>
+						<td>جستجو-بخش سوم </td>
+						<td>
+						  <a href="Slides/AI_Lecture4(Search-Part3)).pptx">[Slides.ppt]</a><br>
+						  <a href="Slides/AI_Lecture4(Search-Part3)).pdf" >[Slides.pdf]</a><br>
+						  <a href="https://www.dropbox.com/s/vsxd1mn36syi52v/AI-Lecture4%28Intro%20and%20Summary%29.mp4?dl=0" >[ويدئو: مقدمه و خلاصه الگوریتم های جستجو]</a><br>
+						  <a href="https://www.dropbox.com/s/8h29efuzsusimf7/AI-Lecture4%28Astar-Inro%20and%20example%29.mp4?dl=0" >[ويدئو: استراتژی جستجوی A*: معرفی و مثال]</a><br>
+						  <a href="https://www.dropbox.com/s/vqq0qif9caxuus4/AI-Lecture4%28Admissible%20Heuristics%29.mp4?dl=0" >[ويدئو: توابع ابتکاری تصدیق پذیر]</a><br>
+						  <a href="https://www.dropbox.com/s/kr6s3v56mx0o2sd/AI-Lecture4%28Astar%20Optimality%29.mp4?dl=0" >[ويدئو: بهینگی الگوریتم A*]</a><br>
+						  <a href="https://www.dropbox.com/s/nks5lso0yyc2ji0/AI-Lecture4%28Admissible%20Design%29.mp4?dl=0" >[ويدئو: طراحی توابع تصدیق پذیر]</a><br>
+						 
+					  </td>
+					  </tr>
+
+					  <tr>
+						<th scope="row">جلسه پنجم</th>
+						<th>  -- </th>
+						<td>مسائل ارضای محدودیت - بخش اول   </td>
+						<td>
+						  <a href="Slides/AI_Lecture5(CSP-Part1)).pptx">[Slides.ppt]</a><br>
+						  <a href="Slides/AI_Lecture5(CSP-Part1)).pdf" >[Slides.pdf]</a><br>
+						  <a href="https://www.dropbox.com/s/e2lsnoaptqnskv3/AI-Lecture5%28CSP-Intro%29.mp4?dl=0" >[ويدئو: مقدمه و معرفی مسائل ارضای محدودیت]</a><br>
+						  <a href="https://www.dropbox.com/s/gxpc657nym8lwh0/AI-Lecture5%28CSP%20Examples%29.mp4?dl=0" >[ویدئو: مثالهایی از مسائل ارضای محدودیت]</a><br>
+						  <a href="https://www.dropbox.com/s/llsd7k8qwz201dw/AI-Lecture5%28CSP%20search%20-%20Backtracking%29.mp4?dl=0" >[ويدئو: جستجو در مسائل ارضای محدودیت-الگوریتم عقبگرد]</a><br>
+						  <a href="https://www.dropbox.com/s/kr6s3v56mx0o2sd/AI-Lecture4%28Astar%20Optimality%29.mp4?dl=0" >[ويدئو: بهبود سازی های الگوریتم عقبگرد]</a><br>
+						 
+					  </td>
+					  </tr>
+
+					  <tr>
+						<th scope="row">جلسه ششم</th>
+						<th>  -- </th>
+						<td>مسائل ارضای محدودیت - بخش دوم   </td>
+						<td>
+						  <a href="Slides/AI_Lecture6(CSP-Part2)).pptx">[Slides.ppt]</a><br>
+						  <a href="Slides/AI_Lecture6(CSP-Part2)).pdf" >[Slides.pdf]</a><br>
+						  <a href="https://www.dropbox.com/s/lfhbffzw3g2yl5q/Lecture6%28CSP-IterativeMethods-Intro%29.mp4?dl=0" >[ويدئو: مقدمه و معرفی روش های بهبود سازی تکراری]</a><br>
+						  <a href="https://www.dropbox.com/s/xyo9ojerawat2it/Lecture6%28CSP-HillClimbing%29%29.mp4?dl=0" >[ویدئو: الگوریتم تپه نوردی]</a><br>
+						  <a href="https://www.dropbox.com/s/llsd7k8qwz201dw/AI-Lecture5%28CSP%20search%20-%20Backtracking%29.mp4?dl=0" >[ويدئو: الگوریتم تبرید شبیه سازی شده]</a><br>
+						  <a href="https://www.dropbox.com/s/f107x7nwfmg1c0g/Lecture6%28CSP-GeneticAlgorithm%29.mp4?dl=0" >[ويدئو: الگوریتم ژنتیک]</a><br>
+						  <a href="https://www.dropbox.com/s/aa5teo7ux0u09y7/Lecture6%28CSP-Code-Analysis%29.mp4?dl=0" >[ويدئو: بررسی کد های حل مسئله n وزیر]</a><br>
+						  <a href="Codes/CSP/NQueen.py" >[کد: کدهای الگوریتم عقبگرد]</a><br>
+						  <a href="Codes/CSP/NQueen_HillClimbing.py" >[کد: کدهای الگوریتم تپه نوردی]</a><br>
+						  <a href="Codes/CSP/NQueen_SA.py" >[کد: کدهای الگوریتم تبرید شبیه سازی شده]</a><br>
+						  <a href="Codes/CSP/NQueen_GA.py" >[کد: کدهای الگوریتم ژنتیک]</a><br>
+
+						  
+
+						 
+					  </td>
+
+					  <tr>
+						<th scope="row">جلسه هفتم</th>
+						<th>  -- </th>
+						<td>جستجو در حضور عامل های دیگر - بخش اول   </td>
+						<td>
+						  <a href="Slides/AI_Lecture7(Game-Part1).pptx">[Slides.ppt]</a><br>
+						  <a href="Slides/AI_Lecture7(Game-Part1).pdf" >[Slides.pdf]</a><br>
+						  <a href="https://www.dropbox.com/s/m9zjgo12i9c10gs/Lecture7%28Game%20intro%29.mp4?dl=0" >[ويدئو: مقدمه و معرفی ]</a><br>
+						  <a href="https://www.dropbox.com/s/4u9p053ki5xrmul/Lecture7%28Game-Search%20Formulation%29.mp4?dl=0" >[ویدئو: فرموله سازی جستجو در بازی]</a><br>
+						  <a href="https://www.dropbox.com/s/qvyo5l9h1s0625n/Lecture7%28Game-MiniMax%20Algorithm%29.mp4?dl=0" >[ويدئو: الگوریتم MiniMax]</a><br>
+						  <a href="https://www.dropbox.com/s/bqelgkii5m0vh9o/Lecture7%28Game-alpha%20beta%20pruning%29.mp4?dl=0" >[ويدئو: هرس آلفا-بتا ]</a><br>
+						  <a href="https://www.dropbox.com/s/szjdueko4ga8sxk/Lecture7%28Game-Evaluation%20Functions%29.mp4?dl=0" >[ویدئو: توابع ارزیابی ]</a><br>
+						 					 
+					  </td>
+					  </tr>
+
+					  <tr>
+						<th scope="row">جلسه هشتم</th>
+						<th>  -- </th>
+						<td>جستجو در حضور عامل های دیگر - بخش دوم   </td>
+						<td>
+						  <a href="Slides/AI_Lecture8(Game-Part2).pptx">[Slides.ppt]</a><br>
+						  <a href="Slides/AI_Lecture8(Game-Part2).pdf" >[Slides.pdf]</a><br>
+						  <a href="https://www.dropbox.com/s/7k9cxfx6marrxpl/AI-ecture8%28Game-Part2-Intro%29.mp4?dl=0" >[ويدئو: مقدمه و معرفی ]</a><br>
+						  <a href="https://www.dropbox.com/s/77uu7w0kqpyop5n/AI-Lecture8%28Game-Expectimax%29.mp4?dl=0" >[ویدئو: بازی با رقیب غیر ایده آل: الگوریتم Expectimax]</a><br>
+						  <a href="https://www.dropbox.com/s/i7p02ks8k12266t/AI-Lecture8%28Game-ExpectiMinimax%29.mp4?dl=0" >[ويدئو: بازی هایی که دارای ماهیت تصادفی هستند: الگوریتم ExpectiMiniMax]</a><br>
+						  <a href="https://www.dropbox.com/s/sxgogl15jqeb8wl/AI-Lecture8%28Game-Other%20topics%29.mp4?dl=0" >[ويدئو: سایر انواع بازی ها ]</a><br>
+						  			 
+					  </td>
+					  </tr>
+
+					
+				  </tbody>-->
+				</table>
+
+			</div>
+		</div>
+		<!--/row-->
+	</div>
+	<!--container-->
+  </section>
+  <br>
+  <section id="practicesyllabus">
+    <div class="container py-3">
+		<div class="row">
+			<div class="col-12 mx-auto">
+			 <h2 id="TAClassFile">رئوس مطالب کلاس حل تمرین</h2><br>
+				
+				<br>
+				<table class="table table-sm table-striped">
+				  <thead>
+					<tr>
+					  <th scope="col" id="TALessonNumber">شماره جلسه</th>
+					   <th scope="col" id="TADateNumber">تاریخ</th>
+					  <th scope="col" id="TALessonTopic">موضوع جلسه</th>
+					  <th scope="col" id="TAName">کمک مدرسین</th>
+					  <th scope="col" id="TADownloadContent">دانلود محتویات</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					
+				  </tbody>
+				</table>
+				
+				
+				
+
+			</div>
+		</div>
+		<!--/row-->
+	</div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p id="AI14001" class="m-0 text-center text-white">هوش مصنوعی ترم پاییز 1400 - طراحی و ترجمه توسط ایمان کیانیان</p>
+
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+	<!-- Author :  Iman Kianian -->
+	<script>
+  
+ 		const ids = ["AI14001","AINav","HomeNav","RefrencesNav","MainClassNav","TAClassNav","CourseTitle","SyllabusHead",
+		"RefrencesHead","RefrenceDescription","BookName","downloadBook","MainClassHead","LessonNumber","DateNumber",
+		"LessonTopic","DownloadContent","TAClassFile","TALessonNumber","TADateNumber","TALessonTopic","TAName","TADownloadContent"];
+		
+		
+		function switchtoeng(){
+			for(var i=0; i<ids.length;i++){
+				eval(`${ids[i]}.textContent=language.en.${ids[i]};`)
+			}
+			
+			document.title = "Artificial Intelligence - Fall 2021";
+			document.getElementById("UniLogo").src = "img/Guilan_logo_eng.png"; 
+			document.getElementById("EnglishNav").style.display = "none"; 
+			document.getElementById("PersianNav").style.display = "block"; 
+			document.getElementById("PersianNav").style.fontFamily = "IranYekan"; 
+			document.body.style.direction="ltr";
+			document.getElementById("page-top").style.textAlign = "left"; 
+			document.getElementById("page-top").style.fontFamily = "Sans"; 
+			document.getElementById("NavItems").classList.add('ml-auto');			
+			document.getElementById("NavItems").classList.remove('mr-auto');			
+			
+		}
+			
+		function switchtofa(){
+			for(var i=0; i<ids.length;i++){
+				eval(`${ids[i]}.textContent=language.fa.${ids[i]};`)
+			}
+			document.title = "هوش مصنوعی - ترم پاییز 1400";
+			document.getElementById("UniLogo").src = "img/Guilan_logo.png";
+			document.getElementById("EnglishNav").style.display = "block"; 
+			document.getElementById("PersianNav").style.display = "none"; 	
+			document.getElementById("EnglishNav").style.fontFamily = "Sans"; 
+			document.body.style.direction="rtl";
+			document.getElementById("page-top").style.textAlign = "right"; 
+			document.getElementById("page-top").style.fontFamily = "IranYekan"; 			
+			document.getElementById("NavItems").classList.add('mr-auto');			
+			document.getElementById("NavItems").classList.remove('ml-auto');					
+			
+			
+		}
+		
+		
+		
+		//language translation
+		var language={
+			en:{
+				AI14001:"Artificial Intelligence Fall 2021 - Design and Translation by Iman Kianian",
+				AINav:"Artificial Intelligence",
+				CourseTitle:"Artificial Intelligence - Fall 2021",
+				HomeNav:"Home",
+				RefrencesNav:"Course Refrences",
+				MainClassNav:"Main Class Files",
+				TAClassNav:"TA's Class Files",
+				SyllabusHead:"Syllabus and Files",
+				RefrencesHead:"Course Refrence",
+				RefrenceDescription:"The following book will be used as the main source for this course: ",
+				BookName:"Artificial Intelligence: A modern approach",
+				downloadBook:"Download Book",
+				MainClassHead:"Main Class Syllabus and Files",
+				LessonNumber:"Lesson Number",
+				DateNumber:"Date",
+				LessonTopic:"Lesson Topic",
+				DownloadContent:"Download Contents",
+				TAClassFile:"TA's Class Syllabus and Files",
+				TALessonNumber:"Lesson Number",
+				TADateNumber:"Date",
+				TALessonTopic:"Lesson Topic",
+				TAName:"Teaching Assistant",
+				TADownloadContent:"Download Content",
+				
+				
+			},
+			fa:{
+				AI14001:"هوش مصنوعی ترم پاییز 1400 - طراحی و ترجمه توسط ایمان کیانیان",
+				AINav:"هوش مصنوعی",
+				CourseTitle:"هوش مصنوعی - ترم پاییز 1400",
+				HomeNav:"خانه",
+				RefrencesNav:"منابع درس",
+				MainClassNav:"رئوس مطالب کلاس درس",
+				TAClassNav:"رئوس مطالب کلاس حل تمرین",
+				SyllabusHead:"رئوس مطالب و فایل ها",
+				RefrencesHead:"منابع درسی",
+				RefrenceDescription:"كتاب زير به عنوان منبع اصلي اين درس مورد استفاده قرار خواهد گرفت:",
+				BookName:"هوش مصنوعی: رهیافتی نوین",
+				downloadBook:"دانلود کتاب",
+				MainClassHead:"فایل ها و رئوس مطالب کلاس درس",
+				LessonNumber:"شماره جلسه",
+				DateNumber:"تاریخ",
+				LessonTopic:"موضوع جلسه",
+				DownloadContent:"دانلود محتویات",
+				TAClassFile:"فایل ها و رئوس مطالب کلاس حل تمرین",
+				TALessonNumber:"شماره جلسه",
+				TADateNumber:"تاریخ",
+				TALessonTopic:"موضوع جلسه",
+				TAName:"کمک مدرسین",
+				TADownloadContent:"دانلود محتویات",
+				
+				
+			}
+		};
+	  
+  </script>
+</body>
+
+</html>

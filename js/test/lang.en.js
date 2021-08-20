@@ -1,0 +1,3 @@
+lang = {
+    Hel : "Hello"
+};

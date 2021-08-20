@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="هوش مصنوعی 1400">
+  <meta name="author" content="ایمان کیانیان">
+  <link rel="shortcut icon" href="AI.ico">
+  <title>هوش مصنوعی - ترم پاییز 1400</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a id="AINav" class="navbar-brand js-scroll-trigger" href="index.html">هوش مصنوعی</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul id="NavItems" class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a id="HomeNav" class="nav-link js-scroll-trigger" href="index.html">خانه</a>
+          </li>
+		  <li class="nav-item">
+            <a id="FinalProject" class="nav-link js-scroll-trigger" href="#finalprojects">پروژه پایانی</a>
+          </li>
+		  <li class="nav-item" id="EnglishNav">
+			<button onclick="switchtoeng()" style="color:white; margin-right:10px;" class="nav-link js-scroll-trigger btn btn-primary">English</button>
+		  </li>
+		  <li class="nav-item" id="PersianNav" style="display:none;" >
+			<button onclick="switchtofa()" style="color:white; margin-left:10px;" class="nav-link js-scroll-trigger btn btn-primary">فارسی</button>
+		  </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white">
+    <div class="container text-center">
+		<img src="img/Guilan_logo.png" width="100px" height="100px" style="margin-bottom:20px" id="UniLogo" />
+      <h1 id="CourseTitle">هوش مصنوعی - ترم پاییز 1400</h1><br>
+		<h3 id="FinalProject2">پروژه پایانی</h3>
+    </div>
+  </header>
+
+
+ 
+
+	<section id="finalprojects" >
+    <div class="container py-3">
+		<div class="row ">
+			<div class="col-12 mx-auto">
+			 <h2 id="FPTitile">پروژه های پایانی</h2><br>
+			 <div class="alert alert-danger" role="alert">
+				   <h4 id="Tips" class="alert-heading">نکات مهم</h4>
+				   <ul>
+				   <li id="TestText">تست</li>
+				   </ul>
+				   
+				</div>
+				<br>
+	<div style="display:none" class="row justify-content-md-center">
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="Projects/online-shopping.jpg" width="200px" height="200px" alt="">
+          <div class="card-body">
+            <h4 class="card-title">پروژه اول</h4>
+            <p class="card-text">فروشگاه آنلاین</p>
+          </div>
+          <div class="card-footer">
+            <a href="Projects/Online Shop.pdf" class="btn btn-primary">اطلاعات بیشتر</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="Projects/ninja.png"  width="200px" height="200px" alt="">
+          <div class="card-body">
+            <h4 class="card-title">پروژه دوم</h4>
+            <p class="card-text">بازی جاذبه نینجا</p>
+          </div>
+          <div class="card-footer">
+            <a href="Projects/Gravity Ninja.pdf" class="btn btn-primary">اطلاعات بیشتر</a>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+			</div>
+		</div>
+		<!--/row-->
+	</div>
+	<!--container-->
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p id="AI14001" class="m-0 text-center text-white">هوش مصنوعی ترم پاییز 1400 - طراحی و ترجمه توسط ایمان کیانیان</p>
+
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+	<!-- Author :  Iman Kianian -->
+	<script>
+  
+ 		const ids = ["AINav","HomeNav","FinalProject","CourseTitle","FinalProject2","FPTitile","Tips","AI14001","TestText"];
+		
+		
+		function switchtoeng(){
+			for(var i=0; i<ids.length;i++){
+				eval(`${ids[i]}.textContent=language.en.${ids[i]};`)
+			}
+			
+			document.title = "Artificial Intelligence - Fall 2021";
+			document.getElementById("UniLogo").src = "img/Guilan_logo_eng.png"; 
+			document.getElementById("EnglishNav").style.display = "none"; 
+			document.getElementById("PersianNav").style.display = "block"; 
+			document.getElementById("PersianNav").style.fontFamily = "IranYekan";
+			document.body.style.direction="ltr";
+			document.getElementById("page-top").style.textAlign = "left"; 
+			document.getElementById("page-top").style.fontFamily = "Sans"; 
+			document.getElementById("NavItems").classList.add('ml-auto');			
+			document.getElementById("NavItems").classList.remove('mr-auto');			
+			
+		}
+			
+		function switchtofa(){
+			for(var i=0; i<ids.length;i++){
+				eval(`${ids[i]}.textContent=language.fa.${ids[i]};`)
+			}
+			document.title = "هوش مصنوعی - ترم پاییز 1400";
+			document.getElementById("UniLogo").src = "img/Guilan_logo.png";
+			document.getElementById("EnglishNav").style.display = "block"; 
+			document.getElementById("PersianNav").style.display = "none"; 
+			document.getElementById("EnglishNav").style.fontFamily = "Sans";			
+			document.body.style.direction="rtl";
+			document.getElementById("page-top").style.textAlign = "right"; 
+			document.getElementById("page-top").style.fontFamily = "IranYekan"; 			
+			document.getElementById("NavItems").classList.add('mr-auto');			
+			document.getElementById("NavItems").classList.remove('ml-auto');					
+			
+			
+		}
+		
+		
+		
+		//language translation
+		var language={
+			en:{
+			
+				AboutNav:"Summary",
+				AI14001:"Artificial Intelligence Fall 2021 - Design and Translation by Iman Kianian",
+				AINav:"Artificial Intelligence",
+				HomeNav:"Home",
+				CourseTitle:"Artificial Intelligence - Fall 2021",
+				FinalProject:"Final Project",
+				FinalProject2:"Final Project",
+				FPTitile:"Final Projects",
+				Tips:"Important Tips",
+				TestText:"Test",
+
+				
+			},
+			fa:{
+				AboutNav:"درباره درس",
+				AI14001:"هوش مصنوعی ترم پاییز 1400 - طراحی و ترجمه توسط ایمان کیانیان",
+				AINav:"هوش مصنوعی",
+				HomeNav:"خانه",
+				CourseTitle:"هوش مصنوعی - ترم پاییز 1400",
+				FinalProject:"پروژه پایانی",
+				FinalProject2:"پروژه پایانی",
+				FPTitile:"پروژه های پایانی",
+				Tips:"نکات مهم",
+				TestText:"تست",
+				
+			}
+		};
+	  
+  </script>
+</body>
+
+</html>
