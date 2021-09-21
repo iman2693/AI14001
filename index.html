@@ -19,11 +19,19 @@
 <body id="page-top">
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+	
     <div class="container">
       <a id="AINav" class="navbar-brand js-scroll-trigger" href="#page-top">هوش مصنوعی</a>
+	  
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+	  <li id="EnglishNav" style="list-style-type: none;">
+			<button onclick="switchtoeng()" style="color:white; margin-right:10px;" class="nav-link js-scroll-trigger btn btn-primary">English</button>
+		  </li>
+		  <li id="PersianNav" style="display:none;" >
+			<button onclick="switchtofa()" style="color:white; margin-left:10px;" class="nav-link js-scroll-trigger btn btn-primary">فارسی</button>
+		  </li>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul id="NavItems" class="navbar-nav mr-auto">
           <li class="nav-item">
@@ -41,14 +49,11 @@
 		  <li class="nav-item">
             <a class="nav-link js-scroll-trigger" id="NewsNav" href="#news">اطلاعیه ها</a>
           </li>
-		  <li class="nav-item" id="EnglishNav">
-			<button onclick="switchtoeng()" style="color:white; margin-right:10px;" class="nav-link js-scroll-trigger btn btn-primary">English</button>
-		  </li>
-		  <li class="nav-item" id="PersianNav" style="display:none;" >
-			<button onclick="switchtofa()" style="color:white; margin-left:10px;" class="nav-link js-scroll-trigger btn btn-primary">فارسی</button>
-		  </li>
+		  
         </ul>
+		
       </div>
+	  
     </div>
   </nav>
 	<div style="background-image:url('img/bghead.jpg');  background-repeat: no-repeat; background-size: cover;">
